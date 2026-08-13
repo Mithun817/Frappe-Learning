@@ -4,6 +4,7 @@ app_publisher = "Mithun"
 app_description = "nil"
 app_email = "mithunr11a@gmail.com"
 app_license = "mit"
+app_include_js = "custom_desk.bundle.js"
 
 # Apps
 # ------------------
