@@ -1,45 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-08-13 06:12:23.517076",
+ "creation": "2026-08-18 13:25:16.541050",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "restaurant_name",
-  "restaurant_id",
-  "ratings",
-  "test_document"
+  "description",
+  "link_to_pattikadu",
+  "restaurant_id"
  ],
  "fields": [
   {
-   "fieldname": "restaurant_name",
+   "fieldname": "description",
    "fieldtype": "Data",
-   "label": "Restaurant Name"
+   "label": "Description"
+  },
+  {
+   "fieldname": "link_to_pattikadu",
+   "fieldtype": "Link",
+   "label": "link_to_pattikadu",
+   "options": "Restaurant"
   },
   {
    "fieldname": "restaurant_id",
-   "fieldtype": "Data",
-   "label": "Restaurant ID"
-  },
-  {
-   "fieldname": "ratings",
-   "fieldtype": "Rating",
-   "label": "Ratings"
-  },
-  {
-   "fieldname": "test_document",
    "fieldtype": "Link",
-   "label": "Test Document",
-   "options": "Test_Document"
+   "label": "Restaurant ID",
+   "options": "Restaurant"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-19 10:35:28.489344",
+ "modified": "2026-08-20 15:51:56.763945",
  "modified_by": "Administrator",
  "module": "demo app",
- "name": "Restaurant",
+ "name": "Test_Document",
  "owner": "Administrator",
  "permissions": [
   {

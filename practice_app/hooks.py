@@ -1,3 +1,6 @@
+from practice_app.demo_app.doctype.test_document import test_document
+
+
 app_name = "practice_app"
 app_title = "demo app"
 app_publisher = "Mithun"
@@ -5,6 +8,22 @@ app_description = "nil"
 app_email = "mithunr11a@gmail.com"
 app_license = "mit"
 app_include_js = "custom_desk.bundle.js"
+
+scheduler_events = {
+    "all" : [
+        "practice_app.task.my_task"
+    ]
+}
+
+doc_events = {
+    "ToDo" : {
+        "validate" : "practice_app.demo_app.doctype.test_document.test_document.validate"
+    }
+}
+
+override_doctype_dashboards = {
+    "Restaurant" : "practice_app.demo_app.doctype.restaurant.restaurant_view.get_data"
+}
 
 # Apps
 # ------------------
